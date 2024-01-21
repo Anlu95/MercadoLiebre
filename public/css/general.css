@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1,900 & mostrar=intercambiar');
+
+@import "./body.css";
+@import "./main.css";
+@import "./footer.css";
+
+
+:root {
+
+    /*color*/
+    --amarillo:#EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+
+    /*tipografia*/
+    --font-family: 'Roboto', sans-serif;
+
+    /*tamaño de fuente*/
+    --cuerpoTexto:12px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentos: 16px;
+    --descripcion: 16px;
+}
+
+
+
+
+/*.title {
+    color: var(--amarillo);
+}*/
