@@ -1,4 +1,11 @@
-body {
-    color: var(--amarillo);
-    background-color: var(--amarillo);
+.titulo {
+    font-size:var(--titulares);
+}
+
+.precio {
+    font-size: var(--precios);
+}
+
+.descuentos{
+    font-size: var(--descuentos);
 }

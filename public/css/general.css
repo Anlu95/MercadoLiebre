@@ -3,6 +3,7 @@
 @import "./body.css";
 @import "./main.css";
 @import "./footer.css";
+@import "./header.css";
 
 
 :root {
@@ -25,10 +26,9 @@
     --descuentos: 16px;
     --descripcion: 16px;
 }
-
-
-
-
-/*.title {
-    color: var(--amarillo);
-}*/
+*{
+    margin: 0%;
+     padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family)
+ }

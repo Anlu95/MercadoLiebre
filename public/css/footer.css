@@ -1,0 +1,30 @@
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    border: 19px solid var(--grisclaro );
+}
+
+
+
+.info {
+    font-size: var(--cuerpoTexto);  
+}
+
+.icono {
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 2rem;
+}
+
+footer.section.p {
+    font-family: var(--roboto);
+}
+
+#info2{
+    
+    text-align: justify;
+    font-size: var(--cuerpoTexto);
+    margin: 8% 4% 4%;
+}
