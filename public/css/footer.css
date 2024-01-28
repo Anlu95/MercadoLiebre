@@ -36,3 +36,12 @@ footer.section.p {
     footer.section.p{}
     #info2{}   
 }
+
+
+@media (min.width:769px){
+    footer {}
+    .info {}
+    .icono {}
+    footer.section.p{}
+    #info2{}  
+}

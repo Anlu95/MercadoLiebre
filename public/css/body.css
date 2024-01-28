@@ -6,3 +6,8 @@
 @media (min-width:426px) {
     .titulo{}
 }
+
+
+@media (min.width:769px){
+    .titulo{}
+}

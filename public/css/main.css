@@ -63,6 +63,17 @@ img{
     display: block;
     }
     img{}
+    .carrito-envios{}
 }
 
+
+@media (min.width:769px){
+    main {}
+    h4{}
+    article{}
+    .precio {}
+    .descuento{}
+    .contenedor{}
+    img{}
     .carrito-envios{}
+}

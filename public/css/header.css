@@ -129,6 +129,23 @@ nav a{
     #imgML {}
     
     #compra{}
-    
+}
 
+
+@media (min.width:769px){
+    header {}
+    .pagina {}
+    #busqueda {}
+    #inicio{}
+    #contenedorinicio{}
+    nav {}
+    ul{}
+    #principal {}
+    nav#segundonav {}
+    nav#primernav {}
+    #lupa {}
+    nav a{}
+    .burger-menu {}   
+    #imgML {}
+    #compra{}
 }
