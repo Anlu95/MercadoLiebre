@@ -12,9 +12,18 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'))
 })
 
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/login.html'))
+})
+
+app.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/register.html'))
+})
+
 /*app.get('/public/css/general.css', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/css/general.css'))
 })*/
 
 
 app.listen(port,() => console.log(`http://localhost:${port}`))
+

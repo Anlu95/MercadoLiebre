@@ -1,11 +1,4 @@
 .titulo {
     font-size:var(--titulares);
-}
-
-.precio {
-    font-size: var(--precios);
-}
-
-.descuentos{
-    font-size: var(--descuentos);
+    background-color: var(--grisclaro);
 }

@@ -1,7 +1,22 @@
 main {
-    border: 30px solid var(--grisclaro);
-    padding: 20px 50px 20px 50px; 
-    
+    border: 15px solid var(--grisclaro);
 }
 
+article{
+    border: 10px solid var(--grisclaro);
+    padding: 15px;
+}
 
+.precio {
+    font-size: var(--precios);
+}
+
+.descuentos{
+    font-size: var(--descuento);
+    color: var(--verde);
+}
+img{
+    max-width: 100%;
+    height: auto;    
+    display: block;
+}

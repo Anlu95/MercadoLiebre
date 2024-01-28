@@ -2,13 +2,12 @@ footer {
     box-sizing: border-box;
     text-align: center;
     font-size: 16px;
-    border: 19px solid var(--grisclaro );
+    border: 6px solid var(--grisclaro);
 }
 
-
-
 .info {
-    font-size: var(--cuerpoTexto);  
+    font-size: var(--cuerpoTexto);
+    font-family: var(--font-family);
 }
 
 .icono {
@@ -23,8 +22,10 @@ footer.section.p {
 }
 
 #info2{
-    
     text-align: justify;
     font-size: var(--cuerpoTexto);
-    margin: 8% 4% 4%;
+    margin: 13% 4% 4%;
+    font-weight: lighter;
+    color: var(--grisoscuro);
 }
+
