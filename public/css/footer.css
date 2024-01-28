@@ -29,3 +29,10 @@ footer.section.p {
     color: var(--grisoscuro);
 }
 
+@media (min-width:426px){
+    footer {}
+    .info {}
+    .icono {}
+    footer.section.p{}
+    #info2{}   
+}

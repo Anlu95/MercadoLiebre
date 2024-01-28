@@ -15,7 +15,7 @@ article{
     font-size: var(--precios);
 }
 
-.descuentos{
+.descuento{
     font-size: var(--descuento);
     color: var(--verde);
 }
@@ -44,9 +44,13 @@ img{
     width: 90%;
     margin: auto;
 }
-    article{}    
+    article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin-top: 15px;
+    border: none;
+}    
     .precio {}
-    .descuentos {
+    .descuento {
         color: var(--verde);
     }
 
@@ -56,14 +60,9 @@ img{
     margin-bottom: 10px;
 }
     h4{
+    display: block;
     }
     img{}
 }
-.carrito-envios{
-    color: var(--verde);
-    border-radius: 23px;
-    width: 39px;
-    height: 42px;
-    padding: 9px;
-    margin: 10px;
-}
+
+    .carrito-envios{}
