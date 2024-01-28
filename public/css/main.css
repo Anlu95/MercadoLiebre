@@ -2,6 +2,10 @@ main {
     border: 15px solid var(--grisclaro);
 }
 
+h4{
+    display: none;
+}
+
 article{
     border: 10px solid var(--grisclaro);
     padding: 15px;
@@ -15,8 +19,51 @@ article{
     font-size: var(--descuento);
     color: var(--verde);
 }
+.contenedor{
+    
+border-top: 1px solid var(--grisclaro);
+}
 img{
     max-width: 100%;
-    height: auto;    
+    height: auto;
     display: block;
+}
+
+.carrito-envios{
+    color: var(--verde);
+    border-radius: 23px;
+    width: 39px;
+    height: 42px;
+    padding: 9px;
+    margin: 10px;
+}
+
+
+@media (min-width: 426px){
+    main {
+    width: 90%;
+    margin: auto;
+}
+    article{}    
+    .precio {}
+    .descuentos {
+        color: var(--verde);
+    }
+
+    .contenedor{
+    border-top: 1px solid var(--grisclaro);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+    h4{
+    }
+    img{}
+}
+.carrito-envios{
+    color: var(--verde);
+    border-radius: 23px;
+    width: 39px;
+    height: 42px;
+    padding: 9px;
+    margin: 10px;
 }

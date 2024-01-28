@@ -2,3 +2,7 @@
     font-size:var(--titulares);
     background-color: var(--grisclaro);
 }
+
+@media (min-width:426px) {
+    .titulo{}
+}

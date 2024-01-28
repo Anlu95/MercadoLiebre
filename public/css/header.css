@@ -13,11 +13,11 @@ header {
 }
 
 #busqueda {
-    width: 200px; 
-    height: 30px; 
+    width: 200px;
+    height: 30px;
     border: 2px solid #000;
     padding: 5px;
-    margin: 10px; 
+    margin: 10px;
     color: var(--grisoscuro);
     background-color: var(--grisclaro);
     text-align: center;
@@ -28,10 +28,16 @@ header {
     flex-direction: column;
 }
 
+#contenedorinicio{}
+
 nav {
     width: 100%;
     padding: 1%;
 }
+
+ul {
+    list-style-type: none;
+  }
 
 #principal {
     display: none;
@@ -44,8 +50,8 @@ nav#primernav {}
 
 
 #lupa {
-    width: 27px; 
-    height: 30px; 
+    width: 27px;
+    height: 30px;
     border: 2px solid #000;
     padding: 5px;
     margin: 10px;
@@ -77,4 +83,49 @@ nav a{
 
 #compra{
     text-align: center;
+}
+
+
+@media (min-width: 426px) {
+    header {}
+    
+    .pagina {}
+    
+    #busqueda {}
+    
+    #inicio{}
+
+    #contenedorinicio{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;}
+    
+    nav {}
+
+    ul{}
+    
+    #principal {
+    display: block;
+}
+    
+    nav#segundonav {}
+    
+    
+    nav#primernav {}
+    
+    
+    #lupa {
+}
+    
+    nav a{}
+    
+    .burger-menu {
+    display: none;
+    }   
+    #imgML {}
+    
+    #compra{}
+    
+
 }
