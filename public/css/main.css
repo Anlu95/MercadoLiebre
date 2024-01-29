@@ -1,3 +1,10 @@
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 15px 0 15px 0;
+}
 main {
     border: 15px solid var(--grisclaro);
 }
@@ -9,15 +16,20 @@ h4{
 article{
     border: 10px solid var(--grisclaro);
     padding: 15px;
+    display: block;
+    font-size: var(--descripcion);
+    background-color: white;
 }
 
 .precio {
     font-size: var(--precios);
+    width: 30%;
 }
 
 .descuento{
     font-size: var(--descuento);
     color: var(--verde);
+    width: 65%;
 }
 .contenedor{
     
@@ -31,15 +43,22 @@ img{
 
 .carrito-envios{
     color: var(--verde);
-    border-radius: 23px;
-    width: 39px;
-    height: 42px;
-    padding: 9px;
-    margin: 10px;
+    margin: 0px;
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 29px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 49px;
 }
+.precio-descuento{display: flex;margin-bottom: 10px;justify-content: space-between;}
 
 
-@media (min-width: 426px){
+@media (min-width: 768px){
+    .articulos{}
     main {
     width: 90%;
     margin: auto;
@@ -48,6 +67,10 @@ img{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     margin-top: 15px;
     border: none;
+    display: inline-block;
+    width: 40%;
+    padding: 7px;
+    margin: 0px;
 }    
     .precio {}
     .descuento {
@@ -58,22 +81,41 @@ img{
     border-top: 1px solid var(--grisclaro);
     padding: 15px;
     margin-bottom: 10px;
+    position: relative;
 }
     h4{
     display: block;
     }
     img{}
-    .carrito-envios{}
+    .carrito-envios{
+    display: block;
+    font-size: 27px;
+    padding: 7px;
+    width: 44px;
+    height: 42px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+    .precio-descuento{}
 }
 
 
-@media (min.width:769px){
+@media (min-width:1024px){
+    .articulos{}
     main {}
     h4{}
-    article{}
+    article{
+}
     .precio {}
     .descuento{}
     .contenedor{}
     img{}
-    .carrito-envios{}
+    .carrito-envios{
 }
+    .precio-descuento{}
+}
+    

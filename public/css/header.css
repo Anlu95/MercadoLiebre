@@ -12,16 +12,17 @@ header {
     align-items: center;
 }
 
-#busqueda {
-    width: 151px;
-    height: 25px;
+.busqueda {
+    width: 139px;
+    height: 19px;
     border: 1px solid #000;
-    padding: 6px;
+    padding: 1px;
     margin: 1px;
     color: var(--grisoscuro);
     background-color: var(--grisclaro);
     text-align: center;
     font-size: x-small;
+    border-radius: 4px;
 }
 
 #inicio{
@@ -29,10 +30,18 @@ header {
     flex-direction: column;
 }
 
-#contenedorinicio{
-    width: 215px;
-    padding: 6%;
+#contenedorinicio{display: flex;justify-content: space-between;align-items: center;width: 60%;padding: 11px;}
+#logo-ml{
+width: 62%;
+padding: 0%;
 }
+#busqueda-lupa{
+    
+width: 50%;
+    
+padding: 2%;
+}
+
 
 nav {
     width: 100%;
@@ -54,8 +63,8 @@ nav#primernav {}
 
 
 #lupa {
-    width: 19px;
-    height: 20px;
+    width: 20%;
+    height: 22%;
     border: 1px solid #000;
     padding: 1px;
     background-color: var(--grisclaro);
@@ -68,9 +77,9 @@ nav a{
 }
 
 .burger-menu {
-    width: 49px;
-    height: 39px;
-    padding: 9px;
+    width: 33px;
+    height: 29px;
+    padding: 3px;
     color: var(--grisclaro);
     font-size: 20px;
     background-color: var(--celeste);
@@ -85,41 +94,78 @@ nav a{
 }
 
 #compra{
-    text-align: center;
+    display: flex;
+    padding: 50px;
+    margin: 1px;
+    height: 2px;
+    font-size: 7px;
+    line-height: 10px;
+    margin-bottom: 11px;
+    width: max-content;
 }
 
 
-@media (min-width: 426px) {
-    header {}
-    
-    .pagina {}
-    
-    #busqueda {
+@media (min-width: 768px) {
+    header {
+    margin: 10px;
 }
     
-    #inicio{}
+    .pagina {
+    display: flow;
+}
+    
+    .busqueda {height: 100%;width: 87%;}
+    
+    #inicio{
+}
 
     #contenedorinicio{
         display: flex;
-        justify-content: flex-end;
-        align-self: stretch;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+        padding: 18px;
         }
+    #logo-ml{
+    width: 30%;
+    padding: 0;
+}
+
+    #busqueda-lupa{
+    width: 30%;
+    height: 23px;
+    padding: 0;
+}
+
     
     nav {}
 
-    ul{}
-    
-    #principal {
-    display: block;
+    ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
     
-    nav#segundonav {}
+    #principal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+    
+    nav#segundonav {
+    width: 50%;
+    display: flex;
+}
     
     
-    nav#primernav {}
+    nav#primernav {display: flex;width: 43%;}
     
     
-    #lupa {}
+    #lupa {
+    width: 20%;
+    height: 100%;
+    padding: 0;
+}
     
     nav a{}
     
@@ -128,16 +174,21 @@ nav a{
     }   
     #imgML {}
     
-    #compra{}
+    #compra{
+    width: 30%;
+    padding: 0px;
+}
 }
 
 
-@media (min.width:769px){
+@media (min-width:1024px){
     header {}
     .pagina {}
-    #busqueda {}
+    .busqueda {}
     #inicio{}
     #contenedorinicio{}
+    #logo-ml{}
+    #busqueda-lupa{}
     nav {}
     ul{}
     #principal {}

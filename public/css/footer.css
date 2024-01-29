@@ -3,6 +3,7 @@ footer {
     text-align: center;
     font-size: 16px;
     border: 6px solid var(--grisclaro);
+    background-color: white;
 }
 
 .info {
@@ -29,7 +30,7 @@ footer.section.p {
     color: var(--grisoscuro);
 }
 
-@media (min-width:426px){
+@media (min-width:768px){
     footer {}
     .info {}
     .icono {}
@@ -38,7 +39,7 @@ footer.section.p {
 }
 
 
-@media (min.width:769px){
+@media (min-width:1024px){
     footer {}
     .info {}
     .icono {}

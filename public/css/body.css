@@ -1,13 +1,21 @@
+body{
+    background-color: var(--grisclaro);
+    padding: 0px;
+    border: 0px solid;
+}
 .titulo {
     font-size:var(--titulares);
     background-color: var(--grisclaro);
+    padding-left: 31px;
 }
 
-@media (min-width:426px) {
-    .titulo{}
+@media (min-width:768px) {
+    .titulo{
+    width: 100%;
+}
 }
 
 
-@media (min.width:769px){
+@media (min-width:1024px){
     .titulo{}
 }
