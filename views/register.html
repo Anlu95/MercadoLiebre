@@ -20,15 +20,15 @@
         <div class="pagina">
             <div id="inicio">
 
-             <div>
-                <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
-
-
                 <div>
-                    <p id="busqueda"> Buscar productos, marcas </p>
-                    <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+
+
+                    <div>
+                        <p id="busqueda"> Buscar productos, marcas </p>
+                        <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
-            </div>
                 <div>
                     <p id="compra"> <i class="fa-solid fa-hand-holding-dollar"></i>
                         Compra en cuotas y sin tarjeta de credito</p>
@@ -66,52 +66,101 @@
 
     <form action="/registro" method="post">
 
-        <label for="Nombre">Nombre y Apellido:</label>
-        <input type="text" name="nombre" id="nombre">
+        <div>
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" name="nombre" value="" id="nombre">
+        </div>
 
-        <label for="nombre">Nombre de usuari@:</label>
-        <input type="text" name="nombre" id="nombre">
+        <div>
+            <label for="usuario">Nombre de usuari@:</label>
+            <input type="text" name="usuario" value="" id="usuario">
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" value="" id="email">
+        </div>
 
-        <label for="fecha">Fecha de nacimiento:</label>
-        <input type="date" name="fecha" value="2024-01-01" min="30-01-1995" max="30-01-2025" >
+        <div>
+            <label for="fechaNac">Fecha de nacimiento:</label>
+            <input type="date" name="fechaNac" value="2024-01-01" min="30-01-1995" max="30-01-2025" id="fechaNac">
+        </div>
 
-        <label for="domicio">Domicio:</label>
-        <input type="text" name="domicio">
-
-    <form action="" method="">
-        <label for="perfil">Perfil de usuario:</label>
-        <input type="radio" name="perfil-de-usuario" value="Comprador" checked>
-        <input type="radio" name="perfil-de-usuario" value="Vendedor">
-    </form>
-
-     <form action="" method="">
-        <label for="Categoria">Categorías de interés (puede elegir más de una)
-        </label>
-        <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" value="Electro">
-        <input type="checkbox" name="Categorías de interés (puede elegir más de una)" value="Moda">
-        <input type="checkbox" name="Categorías de interés (puede elegir más de una)" value="Hogar">
-        <input type="checkbox" name="Categorías de interés (puede elegir más de una)" value="Jugueteria">
-        <input type="checkbox" name="Categorías de interés (puede elegir más de una)" value="Vida sana">
-    </form>
-
-        <label>Foto de usuario:</label>
-        <input type="file" name="avatar" accept=".jpg" multiple>
-
-        <label for="password">Contraseña:</label>
-        <input type="password" name="password">
-
-        <label for="password">Confirma contraseña:</label>
-        <input type="password" name="password">
+        <div>
+            <label for="domicio">Domicio:</label>
+            <input type="text" name="domicio" value="" id="domicio">
+        </div>
 
 
-    <form action="" method="">
+        <div>
+            <h5>Perfil de usuario</h5>
+            <div>
+                <label for="Comprador">Comprador</label>
+                <input type="radio" name="perfil-de-usuario" id="Comprador" value="Comprador" checked>
+            </div>
+
+            <div>
+                <label for="Vendedor">Vendedor</label>
+                <input type="radio" name="perfil-de-usuario" id="Vendedor" value="Vendedor">
+            </div>
+        </div>
+
+        <div>
+            <h5>Categorías de interés (puede elegir más de una)</h5>
+            <div>
+
+                <div>
+                    <label for="Electro">Electro</label>
+                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Electro"
+                        value="Electro">
+                </div>
+
+                <div>
+                    <label for="Moda">Moda</label>
+                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Moda"
+                        value="Moda">
+                </div>
+
+                <div>
+                    <label for="Hogar">Hogar</label>
+                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Hogar"
+                        value="Hogar">
+                </div>
+
+                <div>
+                    <label for="Jugueteria">Jugueteria</label>
+                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Jugueteria"
+                        value="Jugueteria">
+                </div>
+
+                <div>
+                    <label for="Vida sana">Vida sana</label>
+                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Vida sana"
+                        value="Vida sana">
+                </div>
+               
+            </div>
+        </div>
+
+
+        <div>
+            <label>Foto de usuario:</label>
+            <input type="file" name="avatar" accept=".jpg" multiple>
+        </div>
+
+        <div>
+            <label for="contrasenia">Contraseña:</label>
+            <input type="password" name="contrasenia" value="" id="contrasenia">
+        </div>
+
+        <div>
+            <label for="contrasenia">Confirma contraseña:</label>
+            <input type="password" name="contrasenia" value="" id="contrasenia">
+        </div>
 
         <button type="submit">Enviar (pagina principal)</button>
         <button type="reset">Borrar datos</button>
-    </form>
+
 
     </form>
 
