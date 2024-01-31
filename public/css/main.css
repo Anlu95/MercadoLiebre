@@ -23,7 +23,7 @@ article{
 
 .precio {
     font-size: var(--precios);
-    width: 30%;
+    /* width: 30%; */
 }
 
 .descuento{
@@ -108,14 +108,16 @@ img{
     .articulos{}
     main {}
     h4{}
-    article{
+    article{width: 22%;}
+    .precio {
 }
-    .precio {}
     .descuento{}
-    .contenedor{}
+    .contenedor{
+}
     img{}
     .carrito-envios{
 }
-    .precio-descuento{}
+    .precio-descuento{
+}
 }
     
