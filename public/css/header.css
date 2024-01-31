@@ -7,17 +7,17 @@ header {
 .pagina {
     background-color: var(--amarillo);
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 }
 
 .busqueda {
-    width: 139px;
-    height: 19px;
+    width: 90%;
     border: 1px solid #000;
     padding: 1px;
-    margin: 1px;
     color: var(--grisoscuro);
     background-color: var(--grisclaro);
     text-align: center;
@@ -28,18 +28,24 @@ header {
 #inicio{
     display: flex;
     flex-direction: column;
+    margin: 9px 0 45px 0;
+    width: 100%;
 }
 
-#contenedorinicio{display: flex;justify-content: space-between;align-items: center;width: 60%;padding: 11px;}
+#contenedorinicio{flex-wrap: wrap;display: flex;padding: 0px;justify-content: space-between;align-items: center;}
 #logo-ml{
-width: 62%;
-padding: 0%;
+
+width: 50%;
+
+padding: 0%;
 }
 #busqueda-lupa{
     
 width: 50%;
     
 padding: 2%;
+    
+display: flex;
 }
 
 
@@ -63,11 +69,14 @@ nav#primernav {}
 
 
 #lupa {
-    width: 20%;
-    height: 22%;
     border: 1px solid #000;
-    padding: 1px;
+    border-radius: 23%;
+    padding: 5px;
     background-color: var(--grisclaro);
+    font-size: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a{
@@ -95,13 +104,12 @@ nav a{
 
 #compra{
     display: flex;
-    padding: 50px;
-    margin: 1px;
-    height: 2px;
-    font-size: 7px;
-    line-height: 10px;
-    margin-bottom: 11px;
-    width: max-content;
+    padding: 0px;
+    margin: 13px;
+    height: 1px;
+    line-height: 15px;
+    margin-bottom: 4px;
+    font-size: 13px;
 }
 
 
@@ -114,7 +122,7 @@ nav a{
     display: flow;
 }
     
-    .busqueda {height: 100%;width: 87%;}
+    .busqueda {height: 127%;width: 100%;}
     
     #inicio{
 }
@@ -125,9 +133,10 @@ nav a{
         align-items: center;
         margin: 15px;
         padding: 18px;
+        width: 100%;
         }
     #logo-ml{
-    width: 30%;
+    width: 25%;
     padding: 0;
 }
 
@@ -162,9 +171,9 @@ nav a{
     
     
     #lupa {
-    width: 20%;
-    height: 100%;
-    padding: 0;
+    width: 12%;
+    padding: 14px;
+    /* display: inline-block; */
 }
     
     nav a{}
@@ -175,8 +184,9 @@ nav a{
     #imgML {}
     
     #compra{
-    width: 30%;
+    width: 100%;
     padding: 0px;
+    font-size: 14px;
 }
 }
 
@@ -188,13 +198,19 @@ nav a{
     #inicio{}
     #contenedorinicio{}
     #logo-ml{}
-    #busqueda-lupa{}
+    #busqueda-lupa{
+    width: 37%;
+    padding: 0%;
+}
     nav {}
     ul{}
     #principal {}
     nav#segundonav {}
     nav#primernav {}
-    #lupa {}
+    #lupa {
+    width: 5%;
+    border-radius: 26%;
+}
     nav a{}
     .burger-menu {}   
     #imgML {}
