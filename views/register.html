@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>MercadoLiebre</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/css/general.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -20,12 +24,13 @@
         <div class="pagina">
             <div id="inicio">
 
-                <div>
-                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+                <div id="contenedorinicio">
+                    <img id="logo-ml" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
 
 
-                    <div>
-                        <p id="busqueda"> Buscar productos, marcas </p>
+                    <div id="busqueda-lupa">
+                        <input class="busqueda" type="search" name="busqueda" id="busqueda"
+                            placeholder="Busca productos, marcas">
                         <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
@@ -36,22 +41,25 @@
 
             </div>
 
+            <nav id="principal">
 
-            <nav id="primernav">
-                <ul>
-                    <li><a href="#"> Ofertas </a></li>
-                    <li><a href="#"> Tiendas Oficiales </a></li>
-                    <li><a href="#"> Vender </a></li>
-                    <li><a href="#"> Ayuda </a></li>
-                </ul>
-            </nav>
+                <nav id="primernav">
+                    <ul>
+                        <li><a href="#"> Ofertas </a></li>
+                        <li><a href="#"> Tiendas Oficiales </a></li>
+                        <li><a href="#"> Vender </a></li>
+                        <li><a href="#"> Ayuda </a></li>
+                    </ul>
+                </nav>
 
-            <nav id="segundonav">
-                <ul>
-                    <li> <a href="/views/register.html">Crea tu cuenta <i class="fa-regular fa-id-card"></i> </a></li>
-                    <li><a href="/login"> Ingresa <i class="fa-solid fa-right-to-bracket"></i> </a></li>
-                    <li><a href="#"> Mis compras <i class="fa-solid fa-basket-shopping"></i> </a></li>
-                </ul>
+                <nav id="segundonav">
+                    <ul>
+                        <li> <a href="/views/register.html">Crea tu cuenta <i class="fa-regular fa-id-card"></i> </a>
+                        </li>
+                        <li><a href="/login"> Ingresa <i class="fa-solid fa-right-to-bracket"></i> </a></li>
+                        <li><a href="#"> Mis compras <i class="fa-solid fa-basket-shopping"></i> </a></li>
+                    </ul>
+                </nav>
             </nav>
 
             <div class="burger-menu">
@@ -64,107 +72,110 @@
         </div>
     </header>
 
-    <form action="/registro" method="post">
+    <main class="register container">
+        <form action="/registro" method="post" class="row justify-content-center">
 
-        <div>
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" name="nombre" value="" id="nombre">
-        </div>
-
-        <div>
-            <label for="usuario">Nombre de usuari@:</label>
-            <input type="text" name="usuario" value="" id="usuario">
-        </div>
-
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" value="" id="email">
-        </div>
-
-        <div>
-            <label for="fechaNac">Fecha de nacimiento:</label>
-            <input type="date" name="fechaNac" value="2024-01-01" min="30-01-1995" max="30-01-2025" id="fechaNac">
-        </div>
-
-        <div>
-            <label for="domicio">Domicio:</label>
-            <input type="text" name="domicio" value="" id="domicio">
-        </div>
-
-
-        <div>
-            <h5>Perfil de usuario</h5>
-            <div>
-                <label for="Comprador">Comprador</label>
-                <input type="radio" name="perfil-de-usuario" id="Comprador" value="Comprador" checked>
+            <div class="d-flex flex-column my-3">
+                <label class="d-none" for="nombre">Nombre y Apellido:</label>
+                <input class="form-control" type="text" name="nombre" value="" id="nombre" placeholder="Nombre y Apellido">
             </div>
 
-            <div>
-                <label for="Vendedor">Vendedor</label>
-                <input type="radio" name="perfil-de-usuario" id="Vendedor" value="Vendedor">
+            <div class="d-flex flex-column my-3">
+                <label class="d-none" for="usuario">Nombre de usuari@:</label>
+                <input class="form-control" type="text" name="usuario" value="" id="usuario" placeholder="Nombre de usuario">
             </div>
-        </div>
 
-        <div>
-            <h5>Categorías de interés (puede elegir más de una)</h5>
-            <div>
-
-                <div>
-                    <label for="Electro">Electro</label>
-                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Electro"
-                        value="Electro">
-                </div>
-
-                <div>
-                    <label for="Moda">Moda</label>
-                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Moda"
-                        value="Moda">
-                </div>
-
-                <div>
-                    <label for="Hogar">Hogar</label>
-                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Hogar"
-                        value="Hogar">
-                </div>
-
-                <div>
-                    <label for="Jugueteria">Jugueteria</label>
-                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Jugueteria"
-                        value="Jugueteria">
-                </div>
-
-                <div>
-                    <label for="Vida sana">Vida sana</label>
-                    <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Vida sana"
-                        value="Vida sana">
-                </div>
-               
+            <div class="d-flex flex-column my-3">
+                <label class="d-none" for="email">Email:</label>
+                <input class="form-control" type="email" name="email" value="" id="email" placeholder="E-mail">
             </div>
-        </div>
+
+            <div class="d-flex flex-column my-3">
+                <label class="fw-bold" for="fechaNac">Fecha de nacimiento:</label>
+                <input class="form-control" type="date" name="fechaNac" value="2024-01-01" min="1995-01-01" max="2025-01-01" id="fechaNac">
+            </div>
+
+            <div class="d-flex flex-column my-3">
+                <label class="d-none" for="domicio">Domicio:</label>
+                <input class="form-control" type="text" name="domicio" value="" id="domicio" placeholder="Domicio">
+            </div>
 
 
-        <div>
-            <label>Foto de usuario:</label>
-            <input type="file" name="avatar" accept=".jpg" multiple>
-        </div>
+            <div class="col-12 row my-3">
+                <h5 class="fw-bold">Perfil de usuario</h5>
+                <div class="col-3">
+                    <label for="Comprador">Comprador</label>
+                    <input type="radio" name="perfil-de-usuario" id="Comprador" value="Comprador" checked>
+                </div>
 
-        <div>
-            <label for="contrasenia">Contraseña:</label>
-            <input type="password" name="contrasenia" value="" id="contrasenia">
-        </div>
+                <div class="col-3">
+                    <label for="Vendedor">Vendedor</label>
+                    <input type="radio" name="perfil-de-usuario" id="Vendedor" value="Vendedor">
+                </div>
+            </div>
 
-        <div>
-            <label for="contrasenia">Confirma contraseña:</label>
-            <input type="password" name="contrasenia" value="" id="contrasenia">
-        </div>
+            <div class="col-12 row my-3">
+                <h5 class="fw-bold">Categorías de interés (puede elegir más de una)</h5>
+                <div>
 
-        <button type="submit">Enviar (pagina principal)</button>
-        <button type="reset">Borrar datos</button>
+                    <div class="my-2">
+                        <label for="Electro">Electro</label>
+                        <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Electro"
+                            value="Electro">
+                    </div>
+
+                    <div class="my-2">
+                        <label for="Moda">Moda</label>
+                        <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Moda"
+                            value="Moda">
+                    </div>
+
+                    <div class="my-2">
+                        <label for="Hogar">Hogar</label>
+                        <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Hogar"
+                            value="Hogar">
+                    </div>
+
+                    <div class="my-2">
+                        <label for="Jugueteria">Jugueteria</label>
+                        <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Jugueteria"
+                            value="Jugueteria">
+                    </div>
+
+                    <div class="my-2">
+                        <label for="Vida-sana">Vida-sana</label>
+                        <input type="checkbox" name="Categorías-de-interés(puede elegir más de una)" id="Vida-sana"
+                            value="Vida-sana">
+                    </div>
+
+                </div>
+            </div>
 
 
-    </form>
+            <div class="d-flex flex-column my-3">
+                <label for="avatar">Foto de usuario:</label>
+                <input class="form-control form-control-sm" type="file" name="avatar" id="avatar" value="avatar"
+                    accept=".jpg">
+            </div>
 
+            <div class="d-flex flex-column my-3">
+                <label class="d-none" for="contrasenia">Contraseña:</label>
+                <input class="form-control" type="password" name="contrasenia" value="" id="contrasenia" placeholder="Contraseña">
+            </div>
 
+            <div class="d-flex flex-column my-3">
+                <label class="d-none" for="Confirmar-contrasenia">Confirma contraseña:</label>
+                <input class="form-control" type="password" name="Confirmar-contrasenia" value="" id="Confirmar-contrasenia"
+                    placeholder="Confirma contraseña">
+            </div>
+
+            <button class="btn btn-primary col-4 m-1" type="submit">Enviar</button>
+            <button class="btn btn-danger col-4 m-1" type="reset">Borrar datos</button>
+            
+
+        </form>
+
+    </main>
 
 
 
@@ -199,6 +210,10 @@
 
     </footer>
 
+    <!-- SCRIPT Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 
