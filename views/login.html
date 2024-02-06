@@ -29,15 +29,14 @@
 
 
                     <div id="busqueda-lupa">
-                        <input class="busqueda" type="search" name="busqueda" id="busqueda"
-                            placeholder="Busca productos, marcas">
+                         <input class="busqueda" type="search" name="busqueda" id="busqueda" placeholder="Busca productos, marcas">
                         <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
                     </div>
+
+                    <div><p id="compra"> <i class="fa-solid fa-hand-holding-dollar"></i>
+                        Compra en cuotas y sin tarjeta de credito</p></div>
                 </div>
-                <div>
-                    <p id="compra"> <i class="fa-solid fa-hand-holding-dollar"></i>
-                        Compra en cuotas y sin tarjeta de credito</p>
-                </div>
+                
 
             </div>
 
@@ -53,8 +52,7 @@
 
                 <nav id="segundonav">
                     <ul>
-                        <li> <a href="/views/register.html">Crea tu cuenta <i class="fa-regular fa-id-card"></i> </a>
-                        </li>
+                        <li> <a href="/register">Crea tu cuenta <i class="fa-regular fa-id-card"></i> </a></li>
                         <li><a href="/login"> Ingresa <i class="fa-solid fa-right-to-bracket"></i> </a></li>
                         <li><a href="#"> Mis compras <i class="fa-solid fa-basket-shopping"></i> </a></li>
                     </ul>
@@ -66,25 +64,26 @@
         </div>
 
         <div>
-            <img id="imgML" src="/images/img-home-banner.jpg" alt="img-home-banner">
+            <img id="login-imgML" src="/images/img-home-banner.jpg" alt="img-home-banner">
         </div>
     </header>
 
     <main class="login container">
 
-        <form action="/registro" method="post" class="row">
+        <form action="/registro" method="post" class="row mx-2">
 
-            <div class="d-flex flex-column my-2">
+            <div class="d-flex flex-column my-3">
                 <label class="d-none" for="usuario">Nombre de usuari@:</label>
                 <input class="form-control" type="text" name="usuario" value="" id="usuario" placeholder="Nombre de usuario">
             </div>
 
-            <div class="d-flex flex-column my-2">
+            <div class="d-flex flex-column my-3">
                 <label class="d-none" for="contrasenia">Contraseña:</label>
                 <input class="form-control" type="password" name="contrasenia" value="" id="contrasenia" placeholder="Contraseña">
             </div>
 
-            <button class="btn btn-primary my-2" type="submit">Enviar</button>
+            <a href="/" class="btn btn-primary active m-1 btn-sm my-3 p-2" aria-current="page" type="submit">Enviar</a>
+
         </form>
 
 
