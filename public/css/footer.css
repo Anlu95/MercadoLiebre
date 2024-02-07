@@ -41,8 +41,16 @@ footer.section.p {
 
 @media (min-width:1024px){
     footer {}
-    .info {}
+    .info {
+}
     .icono {}
     footer.section.p{}
-    #info2{}  
+    #info2{
+    margin: auto;
+}  
+    #findepagina{
+        display: flex;
+        margin: 2%;
+        padding: 2%;
+        }
 }
