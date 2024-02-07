@@ -14,12 +14,19 @@ h4{
 }
 
 article{
-    border: 10px solid var(--grisclaro);
+    /* border: 10px solid var(--grisclaro); */
     padding: 15px;
     display: block;
     font-size: var(--descripcion);
     background-color: white;
+    transition: transform .1s;
 }
+
+article:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 
 .precio {
     font-size: var(--precios);
@@ -41,6 +48,15 @@ img{
     display: block;
 }
 
+.contenedor-tarjeta:hover .precio-descuento {
+
+    transition-duration: 10s;
+    visibility: visible;
+    transform: 3s;
+
+
+}
+
 .carrito-envios{
     color: var(--verde);
     margin: 0px;
@@ -54,8 +70,18 @@ img{
     position: absolute;
     right: 49px;
 }
-.precio-descuento{display: flex;margin-bottom: 10px;justify-content: space-between;}
 
+.carrito-envios:hover{
+    transition: 0.5s;
+    transform: rotate(-90deg);
+}
+
+.precio-descuento{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    visibility: hidden;
+    }
 
 @media (min-width: 768px){
     .articulos{}
@@ -64,7 +90,7 @@ img{
     margin: auto;
 }
     article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
     margin-top: 15px;
     border: none;
     display: inline-block;
